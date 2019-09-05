@@ -48,6 +48,11 @@
 
   }
 
+  .header__middle {
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+
   .header-logo {
       height: 100%;
       filter: brightness(100);

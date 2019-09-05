@@ -53,6 +53,11 @@
       filter: brightness(100);
   }
 
+  .header__middle {
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+
 
   .rank-list {
       padding: 10px;
