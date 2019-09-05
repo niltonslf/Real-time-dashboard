@@ -1,0 +1,177 @@
+{
+  "bikes": [{
+      "serial": 1,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 2,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 3,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 4,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 5,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 6,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 7,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 8,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 9,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 10,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 11,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 12,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 13,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 15,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 16,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 17,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 18,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 19,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 20,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 21,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 22,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 23,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 24,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 25,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 26,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 27,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 28,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 29,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    },
+    {
+      "serial": 30,
+      "marcha": 1,
+      "somatorio_de_voltas": 20,
+      "date_time": "data"
+    }
+  ]
+}

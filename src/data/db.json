@@ -8,170 +8,170 @@
     },
     {
       "serial": 1,
-      "marcha": 30,
-      "somatorio_de_voltas": 15,
+      "marcha": 154,
+      "somatorio_de_voltas": 77,
       "date_time": "data"
     },
     {
       "serial": 2,
-      "marcha": 128,
-      "somatorio_de_voltas": 64,
+      "marcha": 94,
+      "somatorio_de_voltas": 47,
       "date_time": "data"
     },
     {
       "serial": 3,
-      "marcha": 86,
-      "somatorio_de_voltas": 43,
+      "marcha": 88,
+      "somatorio_de_voltas": 44,
       "date_time": "data"
     },
     {
       "serial": 4,
-      "marcha": 182,
-      "somatorio_de_voltas": 91,
+      "marcha": 44,
+      "somatorio_de_voltas": 22,
       "date_time": "data"
     },
     {
       "serial": 5,
-      "marcha": 70,
-      "somatorio_de_voltas": 35,
+      "marcha": 68,
+      "somatorio_de_voltas": 34,
       "date_time": "data"
     },
     {
       "serial": 6,
-      "marcha": 134,
-      "somatorio_de_voltas": 67,
-      "date_time": "data"
-    },
-    {
-      "serial": 7,
       "marcha": 164,
       "somatorio_de_voltas": 82,
       "date_time": "data"
     },
     {
+      "serial": 7,
+      "marcha": 50,
+      "somatorio_de_voltas": 25,
+      "date_time": "data"
+    },
+    {
       "serial": 8,
-      "marcha": 4,
-      "somatorio_de_voltas": 2,
+      "marcha": 42,
+      "somatorio_de_voltas": 21,
       "date_time": "data"
     },
     {
       "serial": 9,
-      "marcha": 172,
-      "somatorio_de_voltas": 86,
+      "marcha": 40,
+      "somatorio_de_voltas": 20,
       "date_time": "data"
     },
     {
       "serial": 10,
-      "marcha": 34,
-      "somatorio_de_voltas": 17,
+      "marcha": 200,
+      "somatorio_de_voltas": 100,
       "date_time": "data"
     },
     {
       "serial": 11,
-      "marcha": 170,
-      "somatorio_de_voltas": 85,
+      "marcha": 62,
+      "somatorio_de_voltas": 31,
       "date_time": "data"
     },
     {
       "serial": 12,
-      "marcha": 100,
-      "somatorio_de_voltas": 50,
+      "marcha": 38,
+      "somatorio_de_voltas": 19,
       "date_time": "data"
     },
     {
       "serial": 13,
-      "marcha": 152,
-      "somatorio_de_voltas": 76,
-      "date_time": "data"
-    },
-    {
-      "serial": 14,
-      "marcha": 64,
-      "somatorio_de_voltas": 32,
-      "date_time": "data"
-    },
-    {
-      "serial": 15,
-      "marcha": 172,
-      "somatorio_de_voltas": 86,
-      "date_time": "data"
-    },
-    {
-      "serial": 16,
-      "marcha": 80,
-      "somatorio_de_voltas": 40,
-      "date_time": "data"
-    },
-    {
-      "serial": 17,
-      "marcha": 124,
-      "somatorio_de_voltas": 62,
-      "date_time": "data"
-    },
-    {
-      "serial": 18,
-      "marcha": 60,
-      "somatorio_de_voltas": 30,
-      "date_time": "data"
-    },
-    {
-      "serial": 19,
-      "marcha": 10,
-      "somatorio_de_voltas": 5,
-      "date_time": "data"
-    },
-    {
-      "serial": 20,
-      "marcha": 2,
-      "somatorio_de_voltas": 1,
-      "date_time": "data"
-    },
-    {
-      "serial": 21,
-      "marcha": 84,
-      "somatorio_de_voltas": 42,
-      "date_time": "data"
-    },
-    {
-      "serial": 22,
-      "marcha": 104,
-      "somatorio_de_voltas": 52,
-      "date_time": "data"
-    },
-    {
-      "serial": 23,
-      "marcha": 24,
-      "somatorio_de_voltas": 12,
-      "date_time": "data"
-    },
-    {
-      "serial": 24,
-      "marcha": 142,
-      "somatorio_de_voltas": 71,
-      "date_time": "data"
-    },
-    {
-      "serial": 25,
-      "marcha": 184,
-      "somatorio_de_voltas": 92,
-      "date_time": "data"
-    },
-    {
-      "serial": 26,
-      "marcha": 114,
-      "somatorio_de_voltas": 57,
-      "date_time": "data"
-    },
-    {
-      "serial": 27,
       "marcha": 150,
       "somatorio_de_voltas": 75,
       "date_time": "data"
     },
     {
+      "serial": 14,
+      "marcha": 156,
+      "somatorio_de_voltas": 78,
+      "date_time": "data"
+    },
+    {
+      "serial": 15,
+      "marcha": 192,
+      "somatorio_de_voltas": 96,
+      "date_time": "data"
+    },
+    {
+      "serial": 16,
+      "marcha": 24,
+      "somatorio_de_voltas": 12,
+      "date_time": "data"
+    },
+    {
+      "serial": 17,
+      "marcha": 24,
+      "somatorio_de_voltas": 12,
+      "date_time": "data"
+    },
+    {
+      "serial": 18,
+      "marcha": 72,
+      "somatorio_de_voltas": 36,
+      "date_time": "data"
+    },
+    {
+      "serial": 19,
+      "marcha": 44,
+      "somatorio_de_voltas": 22,
+      "date_time": "data"
+    },
+    {
+      "serial": 20,
+      "marcha": 4,
+      "somatorio_de_voltas": 2,
+      "date_time": "data"
+    },
+    {
+      "serial": 21,
+      "marcha": 158,
+      "somatorio_de_voltas": 79,
+      "date_time": "data"
+    },
+    {
+      "serial": 22,
+      "marcha": 164,
+      "somatorio_de_voltas": 82,
+      "date_time": "data"
+    },
+    {
+      "serial": 23,
+      "marcha": 184,
+      "somatorio_de_voltas": 92,
+      "date_time": "data"
+    },
+    {
+      "serial": 24,
+      "marcha": 168,
+      "somatorio_de_voltas": 84,
+      "date_time": "data"
+    },
+    {
+      "serial": 25,
+      "marcha": 106,
+      "somatorio_de_voltas": 53,
+      "date_time": "data"
+    },
+    {
+      "serial": 26,
+      "marcha": 94,
+      "somatorio_de_voltas": 47,
+      "date_time": "data"
+    },
+    {
+      "serial": 27,
+      "marcha": 36,
+      "somatorio_de_voltas": 18,
+      "date_time": "data"
+    },
+    {
       "serial": 28,
-      "marcha": 182,
-      "somatorio_de_voltas": 91,
+      "marcha": 38,
+      "somatorio_de_voltas": 19,
       "date_time": "data"
     },
     {
@@ -182,8 +182,8 @@
     },
     {
       "serial": 30,
-      "marcha": 26,
-      "somatorio_de_voltas": 13,
+      "marcha": 32,
+      "somatorio_de_voltas": 16,
       "date_time": "data"
     }
   ]
