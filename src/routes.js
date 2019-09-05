@@ -4,6 +4,8 @@ const BikeController = require('./controllers/BikeController')
 const router = express.Router()
 
 router.get('/', BikeController.index)
+router.get('/dashboard', BikeController.dashboard)
+
 router.post('/bike', BikeController.bike)
 
 module.exports = router

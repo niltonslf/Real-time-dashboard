@@ -6,11 +6,15 @@ class BikeController {
   constructor() {}
 
   index(req, res) {
+    res.render('index')
+  }
+
+  dashboard(req, res) {
     const bikes = db
       .get('bikes')
       .value()
       .filter((item, index) => index < 15)
-    res.render('index', { bikes })
+    res.render('dashboard', { bikes })
   }
 
   bike(req, res) {
