@@ -1,79 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge; IE=11; IE=EmulateIE11; IE=10; IE=EmulateIE10; IE=9; IE=EmulateIE9; IE=8; IE=EmulateIE8; IE=7; IE=EmulateIE7; IE=5; chrome=1; safari=1" />
-        
-        <title>Go cycle</title>
-    </head>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 
-        html, body { height: 100%; margin: 0; font-family: 'Montserrat', sans-serif; background: #373536 }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge; IE=11; IE=EmulateIE11; IE=10; IE=EmulateIE10; IE=9; IE=EmulateIE9; IE=8; IE=EmulateIE8; IE=7; IE=EmulateIE7; IE=5; chrome=1; safari=1" />
 
-        header { height: 75px; width: 100%; background: #eb6e03 }
+    <title>Go cycle</title>
+</head>
+<link rel="stylesheet" href="/css/main.css">
 
-        .row { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;
-        height:100%;
-            flex-flow:row wrap;
-            justify-content:strech;
-            align-items: strech;
-
-         }
-
-        .square { 
-            width: calc(16.55vw - 10px);
-            text-align: center;
-            text-align: -webkit-center;
-            color: white;
-            font-weight: bold;
-            margin: 20px 0px;
-            font-size: 20px;
-            margin: 5px;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            flex-flow:row wrap;
-        }
-
-        .square div{
-            width: 100%;
-        }
-
-        .speed,.marcha{
-            font-size: 30px
-        }
-        
-        .square:nth-child(2n+2){
-            background: #2578ba 
-        }
-        .square:nth-child(2n+1){
-            background: #01a85a 
-        }
-        .square:nth-child(3n+3){
-            background: #e1d020 
-        }
-        .square:nth-child(5n+5){
-            background: #aaabad 
-        }
-
-    </style>
-    <body>
-        <div class="row">
-            <% bikes.forEach(function(bike, index){ %>
-            <div class="square" id="bike<%-bike['serial']%>">
-                <div>
-                    Marcha: <span  class="marcha"> <%- bike['marcha'] %> </span>
-                </div>
-                <div >
-                    Speed: <span class="speed"> <%- bike['somatorio_de_voltas'] %> </span>
-                </div>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="/images/logo.png" class="header-logo">
+            <div class="header-middle">
+                middle
             </div>
+            <div class="header-end">
+                Tempo total:<br>
+                <strong>00:23:40</strong>
+            </div>
+        </header>
+        <div class="content">
+            <% bikes.forEach(function(bike, index){ %>
+            <article class="user" id="bike<%-bike['serial']%>">
+                <header class="user__header">
+                    <img src="images/user.png" alt="Default user" class="header__picture">
+                    <div class="header__name">Jhon doe</div>
+                    <div class="header__bike">00</div>
+                </header>
+                <div class="user__performance">
+                    100%
+                </div>
+                <footer class="user__footer">
+                    <div class="footer__info">
+                        <span>000</span>
+                        <span class="info__label">rpm</span>
+                    </div>
+                    <div class="footer__info">
+                        <span>000</span>
+                        <span class="info__label">kcal</span>
+                    </div>
+                    <div class="footer__info">
+                        <span>000</span>
+                        <span class="info__label">força</span>
+                    </div>
+                </footer>
+
+            </article>
             <% }) %>
         </div>
-    </body>
+    </div>
+</body>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/client.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/client.js"></script>
+
 </html>
