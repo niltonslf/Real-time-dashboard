@@ -1,0 +1,132 @@
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+      margin: 0;
+  }
+
+  html,
+  body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #373536;
+      font-size: 16px;
+      animation: changeBg 1s 0s linear;
+  }
+
+  @keyframes changeBg {
+      from {
+          background: #eb6e03;
+      }
+
+      to {
+          background: #373536;
+      }
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 75px 1fr;
+      width: 100vw;
+      overflow: hidden;
+
+  }
+
+  .header {
+      height: 75px;
+      width: 100%;
+      background: #eb6e03;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      padding: 15px;
+
+      animation-name: appear;
+      animation-duration: 1s;
+
+  }
+
+  .header-logo {
+      height: 100%;
+      filter: brightness(100);
+  }
+
+
+  .rank-list {
+      padding: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      list-style: none;
+  }
+
+  .rank {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+
+      background: rgba(133, 133, 133, 0.2);
+      border-bottom: 3px solid orange;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+      width: calc(50% - 10px);
+      margin: 5px 5px 10px 5px;
+      color: white;
+  }
+
+  .rank__pos {
+      flex: 0.5;
+      font-weight: bold;
+      margin-right: 10px;
+      max-width: 40px;
+  }
+
+  .rank__picture {
+      flex: 0.5;
+      margin-right: 10px;
+      border-radius: 50%;
+      height: 40px;
+      max-width: 40px;
+      object-fit: cover;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 1);
+  }
+
+  .rank__pos,
+  .rank__name,
+  .rank__infor {
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+
+  .rank__name {
+      flex: 3;
+  }
+
+  .rank__infor {
+      flex: 5;
+      justify-self: flex-end;
+      text-align: right;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+  }
+
+  .rank__infor div {
+      padding-right: 10px;
+      border-right: 2px solid white;
+  }
+
+  .rank__infor span {
+      display: block;
+      font-size: 0.8rem;
+  }
+
+  .rank__infor div:last-child {
+      border: 0;
+  }

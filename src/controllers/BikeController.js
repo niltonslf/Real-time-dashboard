@@ -3,12 +3,6 @@ const db = require('../services/db')
 const socketIo = require('../services/socketio')
 
 class BikeController {
-  constructor() {}
-
-  index(req, res) {
-    res.render('index')
-  }
-
   dashboard(req, res) {
     const bikes = db
       .get('bikes')
