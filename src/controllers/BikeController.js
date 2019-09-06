@@ -1,21 +1,24 @@
 // read db data
 const db = require('../services/db')
-const socketIo = null
 
 class BikeController {
   dashboard(req, res) {
-    const bikes = db
-      .get('bikes')
+    const users = db
+      .get('users')
       .value()
-      .filter((item, index) => index < 15)
-    res.render('dashboard', { bikes })
+      .filter(item => item != null)
+      .filter((item, index) => item)
+    res.render('dashboard', { users })
   }
 
+  /**
+   * Recebe os requests das bikes e salva no banco
+   * @param {*} req
+   * @param {*} res
+   */
   bike(req, res) {
     const payload = req.body
-    console.log(payload)
     db.set(`bikes[${payload.serial}]`, payload).write()
-    socketIo.emit('bike', payload)
     res.send(payload)
   }
 }
