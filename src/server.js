@@ -19,8 +19,12 @@ app.use(routes)
 const server = http.createServer(app)
 const port = process.env.PORT || 3333
 
+// attach socketio to server
+require('./services/socketio').attach(server)
+
+// firebase
+require('./services/firebase')
+
 server.listen(port, () => {
   console.log(`Server started on: http://localhost:${port}`)
 })
-// attach socketio to server
-require('./services/socketio').attach(server)
