@@ -1,6 +1,6 @@
 // read db data
 const db = require('../services/db')
-const socketIo = require('../services/socketio')
+const socketIo = null
 
 class BikeController {
   dashboard(req, res) {
