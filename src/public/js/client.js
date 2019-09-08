@@ -14,19 +14,20 @@ socket.on('classListener', payload => {
 })
 
 socket.on('user', payload => {
-  const usersContainer = (document.querySelector(
-    '#users__container'
-  ).innerHTML += `
-  <article class="user" id="bike${payload.id}">
-    <header class="user__header">
-        <img src="images/user.png" alt="Default user" class="header__picture">
-        <div class="header__name">${payload.name}</div>
-        <div class="header__bike">${payload.name}</div>
-    </header>
-    <div class="user__performance">
-        100%
-    </div>
-    <footer class="user__footer">
+  const hasUser = document.querySelector(`#bike${payload.id}`)
+
+  if (!hasUser) {
+    document.querySelector('#users__container').innerHTML += `
+    <article class="user" id="bike${payload.id}">
+      <header class="user__header">
+          <img src="images/user.png" alt="Default user" class="header__picture">
+          <div class="header__name">${payload.name}</div>
+          <div class="header__bike">${payload.name}</div>
+      </header>
+      <div class="user__performance">
+          100%
+      </div>
+      <footer class="user__footer">
         <div class="footer__info">
             <span>000</span>
             <span class="info__label">rpm</span>
@@ -39,11 +40,10 @@ socket.on('user', payload => {
             <span>000</span>
             <span class="info__label">força</span>
         </div>
-    </footer>
-</article>
-  `)
-
-  console.log({ usersContainer })
+      </footer>
+    </article>
+  `
+  }
 })
 
 socket.on('bike', bike => {

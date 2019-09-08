@@ -56,7 +56,6 @@ class Firestore {
       users.forEach(doc => {
         ApiService.fetchUser(doc.id).then(user => {
           user.id = doc.id
-          console.log(user.id, '\n-------')
           const users = this.lowDB.set(`users[${user.id}]`, user).write()
           // emitir para os sockets que há um novo usuário
           this.io.emit('user', user)
