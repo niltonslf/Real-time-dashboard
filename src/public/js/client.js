@@ -47,7 +47,9 @@ socket.on('user', payload => {
 })
 
 socket.on('bike', bike => {
-  const bikeElem = document.querySelector(`#bike${bike.hash}`)
+  console.log({ socket: bike })
+
+  const bikeElem = document.querySelector(`.bike${bike.hash}`)
 
   bikeElem.querySelector('.user__performance').innerText = bike.rpm
   bikeElem.querySelector('.rpm').innerText = bike.rpm

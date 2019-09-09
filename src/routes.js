@@ -1,15 +1,25 @@
 const express = require('express')
-const HomeController = require('./controllers/HomeController')
-const BikeController = require('./controllers/BikeController')
-const RankController = require('./controllers/RankController')
 
-const router = express.Router()
+function routes(dependencies) {
+  const { io } = dependencies
 
-router.get('/', HomeController.index)
+  const BikeControllerClass = require('./controllers/BikeController')
 
-router.get('/dashboard', BikeController.dashboard)
-router.post('/bike', BikeController.bike)
+  const BikeController = new BikeControllerClass({ io })
+  const HomeController = require('./controllers/HomeController')
+  const RankController = require('./controllers/RankController')
 
-router.get('/rank', RankController.index)
+  const router = express.Router()
 
-module.exports = router
+  // Home
+  router.get('/', HomeController.index)
+  // bikes
+  router.get('/dashboard', BikeController.dashboard)
+  router.post('/bike', BikeController.bike)
+  // rank
+  router.get('/rank', RankController.index)
+
+  return router
+}
+
+module.exports = routes

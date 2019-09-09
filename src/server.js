@@ -14,7 +14,7 @@ io.on('connect', socket => console.log('new client connected'))
 new Firestore({ io }).listenChanges()
 
 // routes
-const routes = require('./routes')
+const routes = require('./routes')({ io })
 
 // configs
 app.set('views', path.join(__dirname, 'views'))

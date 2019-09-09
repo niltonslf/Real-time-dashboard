@@ -2,6 +2,10 @@
 const db = require('../services/db')
 const shortid = require('shortid')
 class BikeController {
+  constructor(dependencies) {
+    const { io } = dependencies
+    this.io = io
+  }
   dashboard(req, res) {
     const users = db
       .get('users')
@@ -19,19 +23,26 @@ class BikeController {
    * @param {*} req
    * @param {*} res
    */
-  async bike(req, res) {
+  bike(req, res) {
     const bike = req.body
-
     console.log({ bike })
 
-    let performance = await db
+    // emitir para socket
+    this.io.emit('bike', { bike })
+
+    // retorna o objeto performance
+    let performance = db
       .get('users')
       .find({ hash: bike.hash })
       .get('performance')
       .value()
-
-    performance.push({ id: shortid.generate(), date: new Date(), ...bike })
-
+    // adiciona o novo item dentro
+    performance.push({
+      id: shortid.generate(),
+      date: new Date(),
+      ...bike
+    })
+    // salva o dado com o novo item
     db.get('users')
       .find({ hash: bike.hash })
       .assign({ performance })
@@ -41,4 +52,4 @@ class BikeController {
   }
 }
 
-module.exports = new BikeController()
+module.exports = BikeController
