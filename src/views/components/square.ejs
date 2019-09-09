@@ -1,24 +1,29 @@
-<article class="user" id="bike<%-user['id']%>">
-    <header class="user__header">
-        <img src="images/user.png" alt="Default user" class="header__picture">
-        <div class="header__name"><%-user['name']%></div>
-        <div class="header__bike"><%-user['bike']%></div>
-    </header>
-    <div class="user__performance">
-        100%
-    </div>
-    <footer class="user__footer">
-        <div class="footer__info">
-            <span>000</span>
-            <span class="info__label">rpm</span>
-        </div>
-        <div class="footer__info">
-            <span>000</span>
-            <span class="info__label">kcal</span>
-        </div>
-        <div class="footer__info">
-            <span>000</span>
-            <span class="info__label">força</span>
-        </div>
-    </footer>
-</article>
+<article class="user bike<%-user['hash']%>" id="user<%-user['id']%>">
+        <header class="user__header">
+            <img src="images/user.png" alt="Default user"
+                class="header__picture">
+            <div class="header__name"><%-user['name']%></div>
+                <div class="header__bike"><%-user['bike']%></div>
+                </header>
+                <div class="user__performance">
+                    100%
+                </div>
+                <footer class="user__footer">
+                    <div class="footer__info">
+                        <span class="rpm">000</span>
+                        <span class="info__label">rpm</span>
+                    </div>
+                    <div class="footer__info">
+                        <span class="march">000</span>
+                        <span class="info__label">marcha</span>
+                    </div>
+                    <div class="footer__info">
+                        <span class="kcal">000</span>
+                        <span class="info__label">kcal</span>
+                    </div>
+                    <div class="footer__info">
+                        <span class="potency">000</span>
+                        <span class="info__label">potência</span>
+                    </div>
+                </footer>
+            </article>

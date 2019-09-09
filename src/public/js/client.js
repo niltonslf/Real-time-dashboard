@@ -18,11 +18,11 @@ socket.on('user', payload => {
 
   if (!hasUser) {
     document.querySelector('#users__container').innerHTML += `
-    <article class="user" id="bike${payload.id}">
+    <article class="user bike${payload.hash}" id="user${payload.id}">
       <header class="user__header">
           <img src="images/user.png" alt="Default user" class="header__picture">
           <div class="header__name">${payload.name}</div>
-          <div class="header__bike">${payload.name}</div>
+          <div class="header__bike">${payload.bike}</div>
       </header>
       <div class="user__performance">
           100%
@@ -47,7 +47,11 @@ socket.on('user', payload => {
 })
 
 socket.on('bike', bike => {
-  const bikeElem = document.querySelector(`#bike${bike.serial}`)
-  bikeElem.querySelector('.marcha').innerText = bike.marcha
-  bikeElem.querySelector('.speed').innerText = bike.somatorio_de_voltas
+  const bikeElem = document.querySelector(`#bike${bike.hash}`)
+
+  bikeElem.querySelector('.user__performance').innerText = bike.rpm
+  bikeElem.querySelector('.rpm').innerText = bike.rpm
+  bikeElem.querySelector('.march').innerText = bike.march
+  bikeElem.querySelector('.kcal').innerText = bike.rpm
+  bikeElem.querySelector('.potency').innerText = bike.rpm
 })

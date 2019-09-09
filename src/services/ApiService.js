@@ -6,20 +6,23 @@ class ApiService {
   constructor() {
     this.apiUrl = 'https://www.gocycle.com.br/plataforma/public/api'
   }
-  fetchUser(id) {
-    const user = fetch(`${this.apiUrl}/userscreen/user/1/classes/1`)
+  fetchUser(userID, classID) {
+    const user = fetch(
+      `${this.apiUrl}/userscreen/user/${userID}/classes/${classID}`
+    )
       .then(res => res.json())
-      .then(user => this.__parseUserData(user))
+      .then(user => this.__parseUserData(user, classID))
     return user
   }
 
-  __parseUserData(user) {
+  __parseUserData(user, userID, classID) {
     return {
-      id: undefined,
+      id: userID,
       name: user.name,
       bike: user.bike_position,
-      class: undefined,
+      class: classID,
       date: new Date(),
+      hash: user.bike_hash,
       time: '00:00',
       pictureUrl: user.picture_url,
       performance: []
