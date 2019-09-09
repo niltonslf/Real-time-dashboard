@@ -24,6 +24,7 @@ class Firestore {
     const franchiseID = 1
 
     this.__listenClasses(franchiseID)
+    this.__fetchTeacher(franchiseID, 1)
     this.__listenUsers(franchiseID, 1)
   }
   /**
@@ -54,13 +55,43 @@ class Firestore {
 
     usersCollection.onSnapshot(users => {
       users.forEach(doc => {
-        ApiService.fetchUser(doc.id).then(user => {
+        ApiService.fetchUser(doc.id, 1).then(user => {
           user.id = doc.id
-          const users = this.lowDB.set(`users[${user.id}]`, user).write()
+          this.lowDB.set(`users[${user.id}]`, user).write()
           // emitir para os sockets que há um novo usuário
           this.io.emit('user', user)
         })
       })
+    })
+  }
+
+  /**
+   * Fetch teacher data from class and franchise
+   * @param {*} franchiseID
+   * @param {*} classID
+   */
+  __fetchTeacher(franchiseID, classID) {
+    const teacherCollection = this.db.collection(
+      `/franchise/${franchiseID}/classes/${classID}/teacher`
+    )
+
+    teacherCollection.get().then(res => {
+      res.forEach(doc => {
+        const teacherName = doc.data().name
+        this.lowDB.set('teacher', teacherName).write()
+      })
+    })
+  }
+
+  /**
+   * Limpar dados da collections de usuários
+   */
+  cleanUsers() {
+    const usersCollection = this.db.collection(
+      `/franchise/${franchiseID}/classes/${classID}`
+    )
+    usersCollection.doc('1').update({
+      users: admin.firestore.FieldValue.arrayRemove('users')
     })
   }
 }
