@@ -1,28 +1,28 @@
 const socket = io()
 
 socket.on('connect', () => {
-  console.log('connected on socket')
+  console.log('client connected on socket')
 })
-socket.on('classListener', payload => {
-  console.log('status recebido', payload)
+socket.on('classListener', user => {
+  console.log('status recebido', user)
 
-  if (payload.status == 1) {
+  if (user.status == 1) {
     window.location = '/dashboard'
-  } else if (payload.status == 2) {
+  } else if (user.status == 2) {
     window.location = '/rank'
   } else window.location = '/'
 })
 
-socket.on('user', payload => {
-  const hasUser = document.querySelector(`#bike${payload.id}`)
+socket.on('user', user => {
+  const hasUser = document.querySelector(`.bike${user.id}`)
 
   if (!hasUser) {
     document.querySelector('#users__container').innerHTML += `
-    <article class="user bike${payload.hash}" id="user${payload.id}">
+    <article class="user bike${user.hash}" id="user${user.id}">
       <header class="user__header">
-          <img src="images/user.png" alt="Default user" class="header__picture">
-          <div class="header__name">${payload.name}</div>
-          <div class="header__bike">${payload.bike}</div>
+          <img src="${user.pictureUrl}" alt="${user.name}" class="header__picture">
+          <div class="header__name">${user.name}</div>
+          <div class="header__bike">${user.bike}</div>
       </header>
       <div class="user__performance">
           100%
@@ -47,11 +47,9 @@ socket.on('user', payload => {
 })
 
 socket.on('bike', bike => {
-  console.log({ socket: bike })
-
   const bikeElem = document.querySelector(`.bike${bike.hash}`)
 
-  bikeElem.querySelector('.user__performance').innerText = bike.rpm
+  bikeElem.querySelector('.featured').innerText = bike.rpm
   bikeElem.querySelector('.rpm').innerText = bike.rpm
   bikeElem.querySelector('.march').innerText = bike.march
   bikeElem.querySelector('.kcal').innerText = bike.rpm

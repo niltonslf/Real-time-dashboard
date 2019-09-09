@@ -5,11 +5,11 @@ const fetch = require('node-fetch')
  * @param {*} serial
  * @param {*} speed
  */
-function makeRequest(marcha, rpm, hash) {
+function makeRequest(march, rpm, hash) {
   fetch('http://localhost:3333/bike', {
     headers: { 'Content-Type': 'application/json; charset=utf-8' },
     method: 'POST',
-    body: JSON.stringify({ marcha, rpm, hash })
+    body: JSON.stringify({ march, rpm, hash })
   })
 }
 
@@ -17,7 +17,7 @@ function makeRequest(marcha, rpm, hash) {
  * Realiza requisição
  */
 setInterval(function() {
-  for (let i = 1; i <= 30; i++) {
+  for (let i = 1; i <= 3; i++) {
     makeRequest(
       Math.ceil(Math.random() * 24),
       Math.ceil(Math.random() * 200),

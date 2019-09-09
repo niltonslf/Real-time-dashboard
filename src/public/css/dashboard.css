@@ -1,130 +1,131 @@
-  *,
-  *::before,
-  *::after {
-      box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #373536;
+  font-size: 16px;
+  animation: changeBg 1s 0s linear;
+}
+
+@keyframes changeBg {
+  from {
+    background: #eb6e03;
   }
 
-  html,
-  body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #373536;
-      font-size: 16px;
-      animation: changeBg 1s 0s linear;
+  to {
+    background: #373536;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 1fr;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  height: 75px;
+  width: 100%;
+  background: #eb6e03;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 15px;
+
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.header__middle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-logo {
+  height: 100%;
+  filter: brightness(100);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.user {
+  width: 100%;
+  text-align: center;
+  text-align: -webkit-center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-flow: row wrap;
+  background: rgb(0, 121, 0);
+  padding: 5px;
+
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
   }
 
-  @keyframes changeBg {
-      from {
-          background: #eb6e03;
-      }
-
-      to {
-          background: #373536;
-      }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
+}
 
-  .container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 75px 1fr;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
+.user__header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  }
+.user__performance {
+  font-size: 4rem;
+}
 
-  .header {
-      height: 75px;
-      width: 100%;
-      background: #eb6e03;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: white;
-      padding: 15px;
+.header__picture {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  background: url('/images/user.png') center no-repeat;
+  background-size: cover;
+}
 
-      animation-name: appear;
-      animation-duration: 1s;
+.header__picture[alt] {
+  font-size: 0;
+}
 
-  }
+.user__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .header__middle {
-      font-size: 1.5rem;
-      font-weight: bold;
-  }
-
-  .header-logo {
-      height: 100%;
-      filter: brightness(100);
-  }
-
-
-  .content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: repeat(4, 1fr);
-      grid-gap: 10px;
-      padding: 10px;
-  }
-
-  .user {
-      width: 100%;
-      text-align: center;
-      text-align: -webkit-center;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-content: space-between;
-      flex-flow: row wrap;
-      background: rgb(0, 121, 0);
-      padding: 5px;
-
-      animation-name: appear;
-      animation-duration: 1s;
-  }
-
-
-  @keyframes appear {
-      from {
-          opacity: 0;
-          transform: scale(0)
-      }
-
-      to {
-          opacity: 1;
-          transform: scale(1)
-      }
-  }
-
-
-  .user__header {
-      width: 100%;
-      height: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-  .user__performance {
-      font-size: 4rem;
-  }
-
-  .header__picture {
-      border-radius: 50%;
-      height: 40px;
-      width: 40px;
-      object-fit: cover;
-  }
-
-  .user__footer {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .info__label {
-      display: block;
-      font-size: 0.7rem;
-  }
+.info__label {
+  display: block;
+  font-size: 0.7rem;
+}

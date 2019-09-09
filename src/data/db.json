@@ -5,7 +5,7 @@
       "id": "1",
       "name": "Usuário app",
       "bike": "1-a",
-      "date": "2019-09-09T18:16:28.101Z",
+      "date": "2019-09-09T20:54:57.732Z",
       "hash": "01",
       "time": "00:00",
       "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
@@ -15,8 +15,38 @@
       "id": "2",
       "name": "José eduardo santos",
       "bike": "2-a",
-      "date": "2019-09-09T18:16:28.121Z",
+      "date": "2019-09-09T20:54:57.806Z",
       "hash": "02",
+      "time": "00:00",
+      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
+      "performance": []
+    },
+    {
+      "id": "3",
+      "name": "José",
+      "bike": "3-a",
+      "date": "2019-09-09T20:54:57.840Z",
+      "hash": "03",
+      "time": "00:00",
+      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
+      "performance": []
+    },
+    {
+      "id": "4",
+      "name": "Diogo Moura",
+      "bike": "4-a",
+      "date": "2019-09-09T20:54:57.893Z",
+      "hash": "04",
+      "time": "00:00",
+      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
+      "performance": []
+    },
+    {
+      "id": "5",
+      "name": "Teste5",
+      "bike": "5-a",
+      "date": "2019-09-09T20:53:16.464Z",
+      "hash": "05",
       "time": "00:00",
       "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
       "performance": []
