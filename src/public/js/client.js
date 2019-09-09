@@ -14,36 +14,7 @@ socket.on('classListener', user => {
 })
 
 socket.on('user', user => {
-  const hasUser = document.querySelector(`.bike${user.id}`)
-
-  if (!hasUser) {
-    document.querySelector('#users__container').innerHTML += `
-    <article class="user bike${user.hash}" id="user${user.id}">
-      <header class="user__header">
-          <img src="${user.pictureUrl}" alt="${user.name}" class="header__picture">
-          <div class="header__name">${user.name}</div>
-          <div class="header__bike">${user.bike}</div>
-      </header>
-      <div class="user__performance">
-          100%
-      </div>
-      <footer class="user__footer">
-        <div class="footer__info">
-            <span>000</span>
-            <span class="info__label">rpm</span>
-        </div>
-        <div class="footer__info">
-            <span>000</span>
-            <span class="info__label">kcal</span>
-        </div>
-        <div class="footer__info">
-            <span>000</span>
-            <span class="info__label">força</span>
-        </div>
-      </footer>
-    </article>
-  `
-  }
+  // TODO: Alterar valores do quadro do usuário
 })
 
 socket.on('bike', bike => {
