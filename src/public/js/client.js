@@ -4,11 +4,13 @@ socket.on('connect', () => {
   console.info('client connected on socket')
 })
 socket.on('classListener', classObj => {
+  const screenOpened = window.location.search
+
   if (classObj.status == 1) {
-    window.location = '/dashboard'
+    window.location = `/dashboard${screenOpened}`
   } else if (classObj.status == 2) {
-    window.location = '/rank'
-  } else window.location = '/'
+    window.location = `/rank${screenOpened}`
+  } else window.location = `/${screenOpened}`
 })
 
 socket.on('user', user => {

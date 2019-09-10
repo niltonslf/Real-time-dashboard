@@ -23,24 +23,26 @@
                     </div>
                     <div class="header__end">
                         <div>
-                            Tela:<br> <strong>Direita</strong>
-                        </div>
-                        <div>
-                            Tempo total:<br>
-                            <strong class="clock">00:23:40</strong>
-                        </div>
-                    </div>
-                </header>
-                <div class="content" id="users__container">
-                    <% for(let i= 1; i <= 15; i++ ){ %>
-                        <%- include('components/square', {index: i}) %>
-                            <% } %>
+                            Tela:<br> <strong><%-position.label%></strong>
+                            </div>
+                            <div>
+                                Tempo total:<br>
+                                <strong class="clock">00:23:40</strong>
                             </div>
                         </div>
-                    </body>
+                    </header>
+                    <div class="content" id="users__container">
+                        <% position.bikesArrangement.forEach(element=> {
+                            %>
+                            <%- include('components/square', {position:
+                                element}) %>
+                                <% }) %>
+                                </div>
+                            </div>
+                        </body>
 
-                    <script src="/socket.io/socket.io.js"></script>
-                    <script src="/js/client.js"></script>
-                    <script src="/js/dashboard.js"></script>
+                        <script src="/socket.io/socket.io.js"></script>
+                        <script src="/js/client.js"></script>
+                        <script src="/js/dashboard.js"></script>
 
-                </html>
+                    </html>

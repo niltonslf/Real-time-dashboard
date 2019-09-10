@@ -7,15 +7,18 @@ class BikeController {
     this.io = io
   }
   dashboard(req, res) {
-    const users = db
-      .get('users')
-      .value()
-      .filter(item => item != null)
-      .filter(item => item)
+    const left = [1, 2, 3, 9, 10, 11, 12, 13, 14, 20, 21, 22, 23, 24, 25]
+    const right = [4, 5, 6, 7, 8, 15, 16, 17, 18, 19, 26, 27, 28, 29, 30]
 
     const teacher = db.get('teacher').value()
+    const screenOpened = req.query.screen
 
-    res.render('dashboard', { users, teacher })
+    const position = {
+      label: screenOpened === 'left' ? 'Esquerda' : 'Direita',
+      bikesArrangement: screenOpened === 'left' ? left : right
+    }
+
+    res.render('dashboard', { position, teacher })
   }
 
   /**
