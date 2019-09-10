@@ -19,7 +19,7 @@ class ApiService {
     return {
       id: userID,
       name: user.name,
-      bike: user.bike_position,
+      bikePos: user.bike_position,
       class: classID,
       date: new Date(),
       hash: user.bike_hash,

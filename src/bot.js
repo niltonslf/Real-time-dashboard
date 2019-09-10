@@ -17,10 +17,10 @@ function makeRequest(march, rpm, hash) {
  * Realiza requisição
  */
 setInterval(function() {
-  for (let i = 1; i <= 3; i++) {
+  for (let i = 1; i <= 30; i++) {
     makeRequest(
       Math.ceil(Math.random() * 24),
-      Math.ceil(Math.random() * 200),
+      Math.ceil(Math.random() * 24),
       `${i}`.padStart(2, 0)
     )
     console.log(`🚴\t Request realizado`)

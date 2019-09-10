@@ -71,7 +71,7 @@ body {
   padding: 10px;
 }
 
-.user {
+.user-square {
   width: 100%;
   text-align: center;
   text-align: -webkit-center;
@@ -82,11 +82,24 @@ body {
   justify-content: center;
   align-content: space-between;
   flex-flow: row wrap;
-  background: rgb(0, 121, 0);
+  background: rgb(105, 105, 105);
   padding: 5px;
 
   animation-name: appear;
   animation-duration: 1s;
+}
+
+.blue {
+  background: rgb(2, 84, 151);
+}
+.green {
+  background: rgb(41, 172, 9);
+}
+.yellow {
+  background: rgb(224, 221, 7);
+}
+.red {
+  background: rgb(201, 19, 19);
 }
 
 @keyframes appear {
