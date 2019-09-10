@@ -18,28 +18,27 @@ function routes(dependencies) {
   // bikes
   router.get('/dashboard', BikeController.dashboard)
   router.post('/bike', (req, res) => {
-    const bike = req.body
+    const bikeData = req.body
+    const userCollection = db.get('users').find({ hash: bikeData.hash })
+    const userData = userCollection.value()
 
+    if (!userData) return res.send(false)
+
+    const bikePos = userData.bikePos
     // emitir para socket
-    io.emit('bike', bike)
+    io.emit('bikeUpdated', { ...bikeData, bikePos })
 
     // retorna o objeto performance
-    let performance = db
-      .get('users')
-      .find({ hash: bike.hash })
-      .get('performance')
-      .value()
+    let performance = userCollection.get('performance').value()
+
     // adiciona o novo item dentro
     performance.push({
       id: shortid.generate(),
       date: new Date(),
-      ...bike
+      ...bikeData
     })
     // salva o dado com o novo item
-    db.get('users')
-      .find({ hash: bike.hash })
-      .assign({ performance })
-      .write()
+    userCollection.assign({ performance }).write()
 
     res.send(true)
   })

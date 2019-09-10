@@ -12,10 +12,8 @@ socket.on('classListener', classObj => {
   } else window.location = `/${screenOpened}`
 })
 
-socket.on('user', user => {
-  console.log({ user })
-
-  const square = document.querySelector(`.square-${user.bike}`)
+socket.on('userCheckin', user => {
+  const square = document.querySelector(`.square-${user.bikePos}`)
 
   if (square) {
     square
@@ -25,10 +23,11 @@ socket.on('user', user => {
   }
 })
 
-socket.on('bike', bike => {
+socket.on('bikeUpdated', bike => {
   const classType = 'gobody'
+  console.log({ bike })
 
-  const bikeElem = document.querySelector(`.square-${bike.hash}`)
+  const bikeElem = document.querySelector(`.square-${bike.bikePos}`)
   if (!bikeElem) return undefined
 
   if (classType == 'gobody') changeSquareColor(bike.rpm, bikeElem)

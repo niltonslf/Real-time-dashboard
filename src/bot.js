@@ -18,7 +18,11 @@ function makeRequest(march, rpm, hash) {
  */
 setInterval(function() {
   for (let i = 1; i <= 30; i++) {
-    makeRequest(Math.ceil(Math.random() * 24), Math.ceil(Math.random() * 24), i)
+    makeRequest(
+      Math.ceil(Math.random() * 24),
+      Math.ceil(Math.random() * 24),
+      `${i}`.padStart(2, 0)
+    )
     console.log(`🚴\t Request realizado`)
   }
 }, 1000)
