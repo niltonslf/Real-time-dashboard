@@ -27,12 +27,12 @@
                         </div>
                         <div>
                             Tempo total:<br>
-                            <strong>00:23:40</strong>
+                            <strong class="clock">00:23:40</strong>
                         </div>
                     </div>
                 </header>
                 <div class="content" id="users__container">
-                    <% for(let i= 1; i <= 16; i++ ){ %>
+                    <% for(let i= 1; i <= 15; i++ ){ %>
                         <%- include('components/square', {index: i}) %>
                             <% } %>
                             </div>
@@ -41,5 +41,6 @@
 
                     <script src="/socket.io/socket.io.js"></script>
                     <script src="/js/client.js"></script>
+                    <script src="/js/dashboard.js"></script>
 
                 </html>

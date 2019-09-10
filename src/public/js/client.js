@@ -1,14 +1,12 @@
 const socket = io()
 
 socket.on('connect', () => {
-  console.log('client connected on socket')
+  console.info('client connected on socket')
 })
-socket.on('classListener', user => {
-  console.log('status recebido', user)
-
-  if (user.status == 1) {
+socket.on('classListener', classObj => {
+  if (classObj.status == 1) {
     window.location = '/dashboard'
-  } else if (user.status == 2) {
+  } else if (classObj.status == 2) {
     window.location = '/rank'
   } else window.location = '/'
 })
