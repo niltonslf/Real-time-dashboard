@@ -51,6 +51,13 @@ body {
   font-weight: bold;
 }
 
+.header__end {
+  display: flex;
+}
+.header__end div {
+  margin-left: 20px;
+}
+
 .header-logo {
   height: 100%;
   filter: brightness(100);
