@@ -5,7 +5,6 @@ socket.on('connect', () => {
 })
 socket.on('classListener', classObj => {
   const screenOpened = window.location.search
-
   if (classObj.status == 1) {
     window.location = `/dashboard${screenOpened}`
   } else if (classObj.status == 2) {
@@ -14,7 +13,16 @@ socket.on('classListener', classObj => {
 })
 
 socket.on('user', user => {
-  // TODO: Alterar valores do quadro do usuário
+  console.log({ user })
+
+  const square = document.querySelector(`.square-${user.bike}`)
+
+  if (square) {
+    square
+      .querySelector('.header__picture')
+      .setAttribute('src', user.pictureUrl)
+    square.querySelector('.header__name').innerText = user.name
+  }
 })
 
 socket.on('bike', bike => {
