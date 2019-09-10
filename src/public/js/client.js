@@ -28,7 +28,8 @@ socket.on('user', user => {
 socket.on('bike', bike => {
   const classType = 'gobody'
 
-  const bikeElem = document.querySelector(`.bike${bike.hash}`)
+  const bikeElem = document.querySelector(`.square-${bike.hash}`)
+  if (!bikeElem) return undefined
 
   if (classType == 'gobody') changeSquareColor(bike.rpm, bikeElem)
 
@@ -40,12 +41,12 @@ socket.on('bike', bike => {
 })
 
 function changeSquareColor(rpm, square) {
-  const color = ''
+  let color = 'gray'
 
-  if (rpm >= 6 && rpm <= 9) color = 'blue'
-  else if (rpm >= 10 && rpm <= 14) color = 'green'
-  else if (rpm >= 15 && rpm <= 18) color = 'yellow'
-  else if (rpm >= 19 && rpm <= 24) color = 'red'
+  if (rpm >= 6 && rpm <= 9) color = 'rgb(2, 84, 151)'
+  else if (rpm >= 10 && rpm <= 14) color = ' rgb(41, 172, 9)'
+  else if (rpm >= 15 && rpm <= 18) color = 'rgb(224, 221, 7)'
+  else if (rpm >= 19) color = 'rgb(201, 19, 19)'
 
-  square.classList.add(color)
+  square.style.backgroundColor = color
 }

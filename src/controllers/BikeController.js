@@ -33,23 +33,23 @@ class BikeController {
     // emitir para socket
     this.io.emit('bike', { bike })
 
-    // retorna o objeto performance
-    let performance = db
-      .get('users')
-      .find({ hash: bike.hash })
-      .get('performance')
-      .value()
-    // adiciona o novo item dentro
-    performance.push({
-      id: shortid.generate(),
-      date: new Date(),
-      ...bike
-    })
-    // salva o dado com o novo item
-    db.get('users')
-      .find({ hash: bike.hash })
-      .assign({ performance })
-      .write()
+    // // retorna o objeto performance
+    // let performance = db
+    //   .get('users')
+    //   .find({ hash: bike.hash })
+    //   .get('performance')
+    //   .value()
+    // // adiciona o novo item dentro
+    // performance.push({
+    //   id: shortid.generate(),
+    //   date: new Date(),
+    //   ...bike
+    // })
+    // // salva o dado com o novo item
+    // db.get('users')
+    //   .find({ hash: bike.hash })
+    //   .assign({ performance })
+    //   .write()
 
     res.send(true)
   }
