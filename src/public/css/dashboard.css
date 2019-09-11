@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #373536;
+  font-size: 16px;
+  animation: changeBg 1s 0s linear;
+}
+
+@keyframes changeBg {
+  from {
+    background: #eb6e03;
+  }
+
+  to {
+    background: #373536;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 1fr;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  height: 75px;
+  width: 100%;
+  background: #eb6e03;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 15px;
+
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.header__middle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header__end {
+  display: flex;
+}
+.header__end div {
+  margin-left: 20px;
+}
+
+.header-logo {
+  height: 100%;
+  filter: brightness(100);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.user-square {
+  width: 100%;
+  text-align: center;
+  text-align: -webkit-center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-flow: row wrap;
+  background: rgb(105, 105, 105);
+  padding: 5px;
+
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.blue {
+  background: rgb(2, 84, 151);
+}
+.green {
+  background: rgb(41, 172, 9);
+}
+.yellow {
+  background: rgb(224, 221, 7);
+}
+.red {
+  background: rgb(201, 19, 19);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.user__header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user__performance {
+  font-size: 4rem;
+}
+
+.header__picture {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  background: url('/images/user.png') center no-repeat;
+  background-size: cover;
+}
+
+.header__picture[alt] {
+  font-size: 0;
+}
+
+.user__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__label {
+  display: block;
+  font-size: 0.7rem;
+}

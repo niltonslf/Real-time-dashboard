@@ -5,26 +5,30 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "sync": "browser-sync start --proxy 'localhost:3333' --files 'css/*.css'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.5",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
+    "firebase-admin": "^8.5.0",
     "lowdb": "^1.0.0",
-    "morgan": "^1.9.1",
     "node-fetch": "^2.6.0",
+    "shortid": "^2.2.15",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "nodemon": "^1.19.1"
   },
   "nodemonConfig": {
     "ignore": [
       "node_modules/*",
-      "data",
+      "src/data",
       "bot.js"
     ]
   }

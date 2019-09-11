@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible"
+            content="IE=edge; IE=11; IE=EmulateIE11; IE=10; IE=EmulateIE10;
+            IE=9; IE=EmulateIE9; IE=8; IE=EmulateIE8; IE=7; IE=EmulateIE7; IE=5;
+            chrome=1; safari=1" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
+        <title>Go cycle</title>
+    </head>
+    <link rel="stylesheet" href="/css/dashboard.css">
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="/images/logo.png" class="header-logo">
+                <div class="header__middle">
+                    <%-teacher%>
+                    </div>
+                    <div class="header__end">
+                        <div>
+                            Tela:<br> <strong><%-position.label%></strong>
+                            </div>
+                            <div>
+                                Tempo total:<br>
+                                <strong class="clock">00:23:40</strong>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="content" id="users__container">
+                        <% position.bikesArrangement.forEach(element=> {
+                            %>
+                            <%- include('components/square', {position:
+                                element}) %>
+                                <% }) %>
+                                    <%- include('components/square', {position:
+                                        00}) %>
+                                    </div>
+                                </div>
+                            </body>
+
+                            <script src="/socket.io/socket.io.js"></script>
+                            <script src="/js/client.js"></script>
+                            <script src="/js/dashboard.js"></script>
+
+                        </html>
