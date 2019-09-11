@@ -1,6 +1,5 @@
 // read db data
 const db = require('../services/db')
-const shortid = require('shortid')
 class BikeController {
   constructor(dependencies) {
     const { io } = dependencies
