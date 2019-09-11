@@ -44,11 +44,15 @@ socket.on('bikeUpdated', bike => {
 
 function changeSquareColor(rpm, square) {
   let color = 'gray'
+  const blue = 'rgb(2, 84, 151)'
+  const green = ' rgb(41, 172, 9)'
+  const yellow = 'rgb(191, 189, 36)'
+  const red = 'rgb(201, 19, 19)'
 
-  if (rpm >= 6 && rpm <= 9) color = 'rgb(2, 84, 151)'
-  else if (rpm >= 10 && rpm <= 14) color = ' rgb(41, 172, 9)'
-  else if (rpm >= 15 && rpm <= 18) color = 'rgb(224, 221, 7)'
-  else if (rpm >= 19) color = 'rgb(201, 19, 19)'
+  if (rpm >= 6 && rpm <= 9) color = blue
+  else if (rpm >= 10 && rpm <= 14) color = green
+  else if (rpm >= 15 && rpm <= 18) color = yellow
+  else if (rpm >= 19) color = red
 
   square.style.backgroundColor = color
 }

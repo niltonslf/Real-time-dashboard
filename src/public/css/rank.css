@@ -48,7 +48,7 @@
 
   }
 
-  .header-logo {
+  .header__logo {
       height: 100%;
       filter: brightness(100);
   }

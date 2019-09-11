@@ -34,10 +34,9 @@ body {
 
 .header {
   height: 75px;
-  width: 100%;
+  width: 100vw;
   background: #eb6e03;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   color: white;
   padding: 15px;
@@ -52,18 +51,30 @@ body {
 }
 
 .header__middle {
-  font-size: 1.5rem;
+  width: 50%;
+  font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .header__end {
+  width: 25%;
   display: flex;
+  font-size: 2rem;
+  text-align: right;
+  align-items: center;
+  justify-content: flex-end;
 }
 .header__end div {
   margin-left: 20px;
 }
 
-.header-logo {
+.header__logo {
+  width: 25%;
+  height: 100%;
+}
+
+.header__logo img {
   height: 100%;
   filter: brightness(100);
 }
@@ -151,9 +162,9 @@ body {
 }
 
 .footer__info {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 .info__label {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }

@@ -14,7 +14,7 @@ class BikeController {
     const screenOpened = req.query.screen
 
     const position = {
-      label: screenOpened === 'left' ? 'Esquerda' : 'Direita',
+      label: screenOpened === 'left' ? 'E' : 'D',
       bikesArrangement: screenOpened === 'left' ? left : right
     }
 

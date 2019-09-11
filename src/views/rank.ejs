@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible"
-        content="IE=edge; IE=11; IE=EmulateIE11; IE=10; IE=EmulateIE10; IE=9; IE=EmulateIE9; IE=8; IE=EmulateIE8; IE=7; IE=EmulateIE7; IE=5; chrome=1; safari=1" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
-    <title>Go cycle</title>
-</head>
-<link rel="stylesheet" href="/css/rank.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible"
+            content="IE=edge; IE=11; IE=EmulateIE11; IE=10; IE=EmulateIE10;
+            IE=9; IE=EmulateIE9; IE=8; IE=EmulateIE8; IE=7; IE=EmulateIE7; IE=5;
+            chrome=1; safari=1" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
+        <title>Go cycle</title>
+    </head>
+    <link rel="stylesheet" href="/css/rank.css">
 
-<body>
-    <div class="container">
-        <header class="header">
-            <img src="/images/logo.png" class="header-logo">
-            <div class="header__middle">
-                Jhon Doe
-            </div>
-            <div class="header__end">
-                Tempo total:<br>
-                <strong>00:23:40</strong>
-            </div>
-        </header>
-        <ul class="rank-list">
-
-            <% [1,2,3,4,5,6,7,8,9,101,1,11,1,1,1,1,1,1,1,1].forEach((e, index) =>{ %>
-            <li class="rank">
-                <span class="rank__pos">#1</span>
-                <img src="/images/user.png" alt="user" class="rank__picture">
-                <span class="rank__name">Jhon doe</span>
-                <div class="rank__infor">
-                    <div>100
-                        <span>rpm</span>
-                    </div>
-                    <div>80%
-                        <span>power</span>
-                    </div>
-                    <div>120
-                        <span>kcal</span>
-                    </div>
-                    <div>12km
-                        <span>distância</span>
-                    </div>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="/images/logo.png" class="header__logo">
+                <div class="header__middle">
+                    Jhon Doe
                 </div>
-            </li>
-            <% }) %>
-        </ul>
-    </div>
-</body>
+                <div class="header__end">
+                    Tempo total:<br>
+                    <strong>00:23:40</strong>
+                </div>
+            </header>
+            <ul class="rank-list">
 
-<script src="/socket.io/socket.io.js"></script>
-<script src="/js/client.js"></script>
+                <% [1,2,3,4,5,6,7,8,9,101,1,11,1,1,1,1,1,1,1,1].forEach((e,
+                    index)=>{ %>
+                    <li class="rank">
+                        <span class="rank__pos">#1</span>
+                        <img src="/images/user.png" alt="user"
+                            class="rank__picture">
+                        <span class="rank__name">Jhon doe</span>
+                        <div class="rank__infor">
+                            <div>100
+                                <span>rpm</span>
+                            </div>
+                            <div>80%
+                                <span>power</span>
+                            </div>
+                            <div>120
+                                <span>kcal</span>
+                            </div>
+                            <div>12km
+                                <span>distância</span>
+                            </div>
+                        </div>
+                    </li>
+                    <% }) %>
+                    </ul>
+                </div>
+            </body>
 
-</html>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="/js/client.js"></script>
+
+        </html>
