@@ -1,8 +1,19 @@
-const clock = document.querySelector('.clock')
+const clock = document.querySelector(".clock");
+let classDuration = moment.duration(0);
 
-let classDate = new Date()
+clock.innerText = "00:00:00";
 
-setInterval(() => {
-  classDate.setSeconds(10)
-  console.log(classDate.toTimeString())
-}, 1000)
+function runClock() {
+  setInterval(() => {
+    console.log("clock is running");
+
+    classDuration.add(1000); // Adiciona 1segundo
+    const seconds = `${classDuration.seconds()}`.padStart(2, "0");
+    const minutes = `${classDuration.minutes()}`.padStart(2, 0);
+    const hours = `${classDuration.hours()}`.padStart(2, 0);
+    //  altera valor no html
+    clock.innerText = `${hours}:${minutes}:${seconds}`;
+  }, 1000);
+}
+
+runClock();
