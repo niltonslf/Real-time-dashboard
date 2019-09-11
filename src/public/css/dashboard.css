@@ -43,6 +43,7 @@ body {
 
   animation-name: appear;
   animation-duration: 1s;
+  text-shadow: 2px 2px 2px black;
 }
 
 .header__name,
@@ -138,7 +139,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-shadow: 2px 2px 2px black;
 }
 
 .user__performance {
