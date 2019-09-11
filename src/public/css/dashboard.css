@@ -46,6 +46,11 @@ body {
   animation-duration: 1s;
 }
 
+.header__name,
+.header__bike {
+  font-size: 1.6rem;
+}
+
 .header__middle {
   font-size: 1.5rem;
   font-weight: bold;
@@ -145,7 +150,10 @@ body {
   justify-content: space-between;
 }
 
+.footer__info {
+  font-size: 1.3rem;
+}
 .info__label {
   display: block;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
 }
