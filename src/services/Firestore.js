@@ -22,10 +22,11 @@ class Firestore {
 
   listenChanges() {
     const franchiseID = 1
+    const classID = 2
 
     this.__listenClasses(franchiseID)
-    this.__fetchTeacher(franchiseID, 1)
-    this.__listenUsers(franchiseID, 1)
+    this.__fetchTeacher(franchiseID, classID)
+    this.__listenUsers(franchiseID, classID)
   }
   /**
    * Listen changes classes collection

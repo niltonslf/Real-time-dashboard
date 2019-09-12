@@ -38,8 +38,8 @@ socket.on('bikeUpdated', bike => {
     classType == 1 ? bike.march : bike.rpm
   bikeElem.querySelector('.rpm').innerText = bike.rpm
   bikeElem.querySelector('.march').innerText = bike.march
-  bikeElem.querySelector('.kcal').innerText = bike.rpm
-  bikeElem.querySelector('.potency').innerText = bike.rpm
+  bikeElem.querySelector('.kcal').innerText = bike.kcal
+  bikeElem.querySelector('.potency').innerText = bike.watts
 })
 
 function changeSquareColor(rpm, square) {
