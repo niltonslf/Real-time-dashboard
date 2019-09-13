@@ -14,6 +14,7 @@ socket.on('classListener', classObj => {
 
 socket.on('userCheckin', user => {
   const square = document.querySelector(`.square-${user.bikePos}`)
+  console.log(`.square-${user.bikePos}`)
 
   if (square) {
     square
@@ -30,6 +31,7 @@ socket.on('bikeUpdated', bike => {
   console.log({ bike })
 
   const bikeElem = document.querySelector(`.square-${bike.bikePos}`)
+
   if (!bikeElem) return undefined
 
   if (classType == 1) changeSquareColor(bike.march, bikeElem)

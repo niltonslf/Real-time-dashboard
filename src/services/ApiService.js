@@ -28,6 +28,16 @@ class ApiService {
       performance: []
     }
   }
+  postUserResult(data) {
+    const myInit = { method: 'POST', body: data }
+    fetch(`${this.apiUrl}/userscreen/classes/finished`, myInit)
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.error('Error:', err.message)
+      })
+  }
 }
 
 module.exports = new ApiService()

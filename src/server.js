@@ -11,7 +11,8 @@ const io = require('socket.io')(server)
 io.on('connect', socket => console.log('new client connected'))
 
 // Firestore
-new Firestore({ io }).listenChanges()
+const firestore = new Firestore({ io })
+firestore.listenChanges()
 
 // routes
 const routes = require('./routes')({ io })

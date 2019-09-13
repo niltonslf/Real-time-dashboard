@@ -22,7 +22,7 @@ class Firestore {
 
   listenChanges() {
     const franchiseID = 1
-    const classID = 2
+    const classID = 1
 
     this.__listenClasses(franchiseID)
     this.__fetchTeacher(franchiseID, classID)
@@ -58,7 +58,7 @@ class Firestore {
       users.forEach(doc => {
         ApiService.fetchUser(doc.id, 1).then(user => {
           user.id = doc.id
-          this.lowDB.set(`users[${user.id}]`, user).write()
+          // this.lowDB.set(`users[${user.id}]`, user).write()  TODO: Remover comentário
           // emitir para os sockets que há um novo usuário
           this.io.emit('userCheckin', user)
         })

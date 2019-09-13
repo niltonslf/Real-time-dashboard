@@ -1,84 +1,200 @@
 {
   "users": [
     null,
-    null,
-    null,
-    null,
+    {
+      "id": "1",
+      "name": "Usuário app",
+      "bikePos": "1",
+      "date": "2019-09-12T22:07:31.408Z",
+      "hash": "01",
+      "time": "00:00",
+      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
+      "performance": [
+        {
+          "id": "3tBeQNm",
+          "date": "2019-09-12T22:07:40.237Z",
+          "march": 12,
+          "rpm": 4,
+          "kcal": 124,
+          "watts": 72,
+          "hash": "01"
+        },
+        {
+          "id": "3iZ620g",
+          "date": "2019-09-12T22:07:45.140Z",
+          "march": 3,
+          "rpm": 11,
+          "kcal": 160,
+          "watts": 106,
+          "hash": "01"
+        },
+        {
+          "id": "4-0aHa8",
+          "date": "2019-09-12T22:07:50.392Z",
+          "march": 7,
+          "rpm": 1,
+          "kcal": 125,
+          "watts": 79,
+          "hash": "01"
+        },
+        {
+          "id": "6Wu2WaM",
+          "date": "2019-09-12T22:07:55.210Z",
+          "march": 4,
+          "rpm": 24,
+          "kcal": 185,
+          "watts": 12,
+          "hash": "01"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "José eduardo santos",
+      "bikePos": "2",
+      "date": "2019-09-12T22:07:31.325Z",
+      "hash": "02",
+      "time": "00:00",
+      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
+      "performance": [
+        {
+          "id": "BS9Ev_eR",
+          "date": "2019-09-12T22:07:40.255Z",
+          "march": 8,
+          "rpm": 9,
+          "kcal": 40,
+          "watts": 1,
+          "hash": "02"
+        },
+        {
+          "id": "7mNZgzzx",
+          "date": "2019-09-12T22:07:45.156Z",
+          "march": 6,
+          "rpm": 16,
+          "kcal": 27,
+          "watts": 183,
+          "hash": "02"
+        },
+        {
+          "id": "RXxPxvRC",
+          "date": "2019-09-12T22:07:50.430Z",
+          "march": 21,
+          "rpm": 6,
+          "kcal": 7,
+          "watts": 118,
+          "hash": "02"
+        },
+        {
+          "id": "MgSLW9Da",
+          "date": "2019-09-12T22:07:55.227Z",
+          "march": 20,
+          "rpm": 9,
+          "kcal": 133,
+          "watts": 89,
+          "hash": "02"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "José",
+      "bikePos": "3",
+      "date": "2019-09-12T22:07:31.408Z",
+      "hash": "03",
+      "time": "00:00",
+      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
+      "performance": [
+        {
+          "id": "jkKtaS0F",
+          "date": "2019-09-12T22:07:40.270Z",
+          "march": 20,
+          "rpm": 10,
+          "kcal": 121,
+          "watts": 174,
+          "hash": "03"
+        },
+        {
+          "id": "4GcUcAHh",
+          "date": "2019-09-12T22:07:45.170Z",
+          "march": 1,
+          "rpm": 18,
+          "kcal": 115,
+          "watts": 157,
+          "hash": "03"
+        },
+        {
+          "id": "xUJtxeAq",
+          "date": "2019-09-12T22:07:50.446Z",
+          "march": 14,
+          "rpm": 22,
+          "kcal": 180,
+          "watts": 110,
+          "hash": "03"
+        },
+        {
+          "id": "T3BBwQdu",
+          "date": "2019-09-12T22:07:55.246Z",
+          "march": 22,
+          "rpm": 5,
+          "kcal": 71,
+          "watts": 49,
+          "hash": "03"
+        }
+      ]
+    },
     {
       "id": "4",
       "name": "Diogo Moura",
       "bikePos": "4",
-      "date": "2019-09-11T18:24:49.196Z",
+      "date": "2019-09-12T22:07:31.460Z",
       "hash": "04",
       "time": "00:00",
       "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
-      "performance": []
+      "performance": [
+        {
+          "id": "FBNBiIc_",
+          "date": "2019-09-12T22:07:40.286Z",
+          "march": 20,
+          "rpm": 23,
+          "kcal": 173,
+          "watts": 156,
+          "hash": "04"
+        },
+        {
+          "id": "ISBRTImk",
+          "date": "2019-09-12T22:07:45.182Z",
+          "march": 17,
+          "rpm": 18,
+          "kcal": 175,
+          "watts": 122,
+          "hash": "04"
+        },
+        {
+          "id": "nc5cy-MP",
+          "date": "2019-09-12T22:07:50.461Z",
+          "march": 20,
+          "rpm": 13,
+          "kcal": 93,
+          "watts": 178,
+          "hash": "04"
+        },
+        {
+          "id": "r6IUCgHj",
+          "date": "2019-09-12T22:07:55.263Z",
+          "march": 11,
+          "rpm": 22,
+          "kcal": 198,
+          "watts": 107,
+          "hash": "04"
+        }
+      ]
     },
     {
       "id": "5",
       "name": "Teste5",
       "bikePos": "5",
-      "date": "2019-09-11T18:25:05.402Z",
+      "date": "2019-09-12T22:07:31.459Z",
       "hash": "05",
-      "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
-      "performance": []
-    },
-    {
-      "id": "6",
-      "name": "Teste 2011",
-      "bikePos": "6",
-      "date": "2019-09-11T18:25:05.442Z",
-      "hash": "06",
-      "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
-      "performance": []
-    },
-    {
-      "id": "7",
-      "name": "José eduardo santos",
-      "bikePos": "7",
-      "date": "2019-09-11T18:24:57.242Z",
-      "hash": "07",
-      "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
-      "performance": []
-    },
-    {
-      "id": "8",
-      "name": "José",
-      "bikePos": "8",
-      "date": "2019-09-11T18:25:09.045Z",
-      "hash": "08",
-      "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
-      "performance": []
-    },
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      "id": "28",
-      "name": "Diogo Moura",
-      "bikePos": "28",
-      "date": "2019-09-11T18:24:32.717Z",
-      "hash": "28",
       "time": "00:00",
       "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
       "performance": []
