@@ -1,3 +1,5 @@
+// @ts-check
+
 const db = require('../services/db')
 const ApiService = require('../services/ApiService')
 
@@ -22,10 +24,17 @@ function index(req, res) {
     const summation = calcSummation(performance)
     const userAverage = calcAverage(summation, length)
 
-    resultList.push({ user: user.id, ...userAverage })
+    resultList.push({
+      user: {
+        id: user.id,
+        name: user.name,
+        pictureUrl: user.pictureUrl
+      },
+      ...userAverage
+    })
   })
 
-  postDataToApi(resultList)
+  console.log(resultList)
 
   res.render('rank.ejs', { position, teacher, resultList })
 }
