@@ -3,7 +3,9 @@
 Projeto desenvolvido para uma academia de bicicletas que exibe informações em tempo real em telão. Essas bicicletas possuem um hardware conectado que envia informações sobre RPM, marcha e calorias gastas pelos ciclistas.
 
 Para fazer a simulação das bikes enviando estes dados para o back-end, desenvolvi um mini bot que simula estas requisições. O mesmopode ser encontrado dentro de `src/bot.js`.
-****
+
+---
+
 > [!NOTE]
 > O projeto foi encerrado, por isso o sistema não está com todas as funcionalidades.
 
@@ -13,13 +15,21 @@ Para fazer a simulação das bikes enviando estes dados para o back-end, desenvo
 - Expressjs 📍
 - Socketio 📨
 - Ejs :page_facing_up:
-- Firebase :fire:
+- Firestore :fire:
 
 # Screenshots
 
-<p>Example 01</p>
+<p>Tela de carregamento</p>
 
-<p>Example 02</p>
+![Carregamento](./load.gif)
+
+<p>Dashboard</p>
+
+![Dashboard](./dashboard.png)
+
+<p>Tela de rank</p>
+
+![rank](./rank.png)
 
 # Run project
 
