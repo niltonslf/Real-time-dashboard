@@ -58,7 +58,7 @@ class Firestore {
       users.forEach(doc => {
         ApiService.fetchUser(doc.id, 1).then(user => {
           user.id = doc.id
-          // this.lowDB.set(`users[${user.id}]`, user).write()  TODO: Remover comentário
+          this.lowDB.set(`users[${user.id}]`, user).write()
           // emitir para os sockets que há um novo usuário
           this.io.emit('userCheckin', user)
         })

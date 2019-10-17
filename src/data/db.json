@@ -4,199 +4,372 @@
     {
       "id": "1",
       "name": "Usuário app",
-      "bikePos": "1",
-      "date": "2019-09-12T22:07:31.408Z",
-      "hash": "01",
+      "bikePos": "6",
+      "date": "2019-10-17T23:21:04.069Z",
+      "hash": "06",
       "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
+      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/1/php3kLAly.png",
       "performance": [
         {
-          "id": "3tBeQNm",
-          "date": "2019-09-12T22:07:40.237Z",
+          "id": "I0iaegl0",
+          "date": "2019-10-17T23:21:04.948Z",
+          "march": 24,
+          "rpm": 1,
+          "kcal": 145,
+          "watts": 118,
+          "hash": "06"
+        },
+        {
+          "id": "zWN9o9O3",
+          "date": "2019-10-17T23:21:05.982Z",
+          "march": 4,
+          "rpm": 1,
+          "kcal": 188,
+          "watts": 162,
+          "hash": "06"
+        },
+        {
+          "id": "FHzs6k1q",
+          "date": "2019-10-17T23:21:06.950Z",
+          "march": 14,
+          "rpm": 4,
+          "kcal": 43,
+          "watts": 106,
+          "hash": "06"
+        },
+        {
+          "id": "uUADLXQV",
+          "date": "2019-10-17T23:21:07.948Z",
+          "march": 9,
+          "rpm": 2,
+          "kcal": 143,
+          "watts": 102,
+          "hash": "06"
+        },
+        {
+          "id": "wkUWDpIr",
+          "date": "2019-10-17T23:21:08.967Z",
+          "march": 8,
+          "rpm": 20,
+          "kcal": 21,
+          "watts": 77,
+          "hash": "06"
+        },
+        {
+          "id": "YSpBHCIG",
+          "date": "2019-10-17T23:21:09.975Z",
           "march": 12,
           "rpm": 4,
-          "kcal": 124,
-          "watts": 72,
-          "hash": "01"
+          "kcal": 4,
+          "watts": 45,
+          "hash": "06"
         },
         {
-          "id": "3iZ620g",
-          "date": "2019-09-12T22:07:45.140Z",
-          "march": 3,
-          "rpm": 11,
-          "kcal": 160,
-          "watts": 106,
-          "hash": "01"
-        },
-        {
-          "id": "4-0aHa8",
-          "date": "2019-09-12T22:07:50.392Z",
-          "march": 7,
+          "id": "nTKAAwlG",
+          "date": "2019-10-17T23:21:10.962Z",
+          "march": 24,
           "rpm": 1,
-          "kcal": 125,
-          "watts": 79,
-          "hash": "01"
+          "kcal": 25,
+          "watts": 109,
+          "hash": "06"
         },
         {
-          "id": "6Wu2WaM",
-          "date": "2019-09-12T22:07:55.210Z",
+          "id": "Fv22TBUm",
+          "date": "2019-10-17T23:21:12.004Z",
+          "march": 12,
+          "rpm": 19,
+          "kcal": 93,
+          "watts": 65,
+          "hash": "06"
+        },
+        {
+          "id": "OUfqG_8m",
+          "date": "2019-10-17T23:21:13.010Z",
+          "march": 18,
+          "rpm": 22,
+          "kcal": 129,
+          "watts": 50,
+          "hash": "06"
+        },
+        {
+          "id": "_xxfbnf9",
+          "date": "2019-10-17T23:21:13.955Z",
+          "march": 9,
+          "rpm": 4,
+          "kcal": 193,
+          "watts": 23,
+          "hash": "06"
+        },
+        {
+          "id": "v0Y-g2Se",
+          "date": "2019-10-17T23:21:14.975Z",
+          "march": 24,
+          "rpm": 8,
+          "kcal": 134,
+          "watts": 57,
+          "hash": "06"
+        },
+        {
+          "id": "O8Ogxrib",
+          "date": "2019-10-17T23:21:15.984Z",
+          "march": 19,
+          "rpm": 2,
+          "kcal": 144,
+          "watts": 116,
+          "hash": "06"
+        },
+        {
+          "id": "ZIwgQ4xt",
+          "date": "2019-10-17T23:21:16.977Z",
+          "march": 10,
+          "rpm": 6,
+          "kcal": 44,
+          "watts": 151,
+          "hash": "06"
+        },
+        {
+          "id": "4x1eSFAM",
+          "date": "2019-10-17T23:21:17.981Z",
+          "march": 3,
+          "rpm": 13,
+          "kcal": 58,
+          "watts": 131,
+          "hash": "06"
+        },
+        {
+          "id": "gxbXL_Fn",
+          "date": "2019-10-17T23:21:18.974Z",
+          "march": 14,
+          "rpm": 3,
+          "kcal": 182,
+          "watts": 115,
+          "hash": "06"
+        },
+        {
+          "id": "d9KHAVJ6",
+          "date": "2019-10-17T23:21:19.964Z",
+          "march": 17,
+          "rpm": 8,
+          "kcal": 155,
+          "watts": 108,
+          "hash": "06"
+        },
+        {
+          "id": "WJE8BCma",
+          "date": "2019-10-17T23:21:20.977Z",
+          "march": 16,
+          "rpm": 16,
+          "kcal": 93,
+          "watts": 151,
+          "hash": "06"
+        },
+        {
+          "id": "kcKTHolX",
+          "date": "2019-10-17T23:21:21.962Z",
+          "march": 22,
+          "rpm": 13,
+          "kcal": 183,
+          "watts": 126,
+          "hash": "06"
+        },
+        {
+          "id": "yB5OhysC",
+          "date": "2019-10-17T23:21:22.954Z",
+          "march": 2,
+          "rpm": 22,
+          "kcal": 32,
+          "watts": 31,
+          "hash": "06"
+        },
+        {
+          "id": "UeGqveDw",
+          "date": "2019-10-17T23:21:23.980Z",
           "march": 4,
-          "rpm": 24,
-          "kcal": 185,
-          "watts": 12,
-          "hash": "01"
+          "rpm": 12,
+          "kcal": 141,
+          "watts": 200,
+          "hash": "06"
         }
       ]
     },
     {
       "id": "2",
-      "name": "José eduardo santos",
-      "bikePos": "2",
-      "date": "2019-09-12T22:07:31.325Z",
-      "hash": "02",
+      "date": "2019-10-17T23:21:04.368Z",
       "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
-      "performance": [
-        {
-          "id": "BS9Ev_eR",
-          "date": "2019-09-12T22:07:40.255Z",
-          "march": 8,
-          "rpm": 9,
-          "kcal": 40,
-          "watts": 1,
-          "hash": "02"
-        },
-        {
-          "id": "7mNZgzzx",
-          "date": "2019-09-12T22:07:45.156Z",
-          "march": 6,
-          "rpm": 16,
-          "kcal": 27,
-          "watts": 183,
-          "hash": "02"
-        },
-        {
-          "id": "RXxPxvRC",
-          "date": "2019-09-12T22:07:50.430Z",
-          "march": 21,
-          "rpm": 6,
-          "kcal": 7,
-          "watts": 118,
-          "hash": "02"
-        },
-        {
-          "id": "MgSLW9Da",
-          "date": "2019-09-12T22:07:55.227Z",
-          "march": 20,
-          "rpm": 9,
-          "kcal": 133,
-          "watts": 89,
-          "hash": "02"
-        }
-      ]
+      "performance": []
     },
     {
       "id": "3",
-      "name": "José",
-      "bikePos": "3",
-      "date": "2019-09-12T22:07:31.408Z",
-      "hash": "03",
+      "date": "2019-10-17T23:21:04.650Z",
       "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
-      "performance": [
-        {
-          "id": "jkKtaS0F",
-          "date": "2019-09-12T22:07:40.270Z",
-          "march": 20,
-          "rpm": 10,
-          "kcal": 121,
-          "watts": 174,
-          "hash": "03"
-        },
-        {
-          "id": "4GcUcAHh",
-          "date": "2019-09-12T22:07:45.170Z",
-          "march": 1,
-          "rpm": 18,
-          "kcal": 115,
-          "watts": 157,
-          "hash": "03"
-        },
-        {
-          "id": "xUJtxeAq",
-          "date": "2019-09-12T22:07:50.446Z",
-          "march": 14,
-          "rpm": 22,
-          "kcal": 180,
-          "watts": 110,
-          "hash": "03"
-        },
-        {
-          "id": "T3BBwQdu",
-          "date": "2019-09-12T22:07:55.246Z",
-          "march": 22,
-          "rpm": 5,
-          "kcal": 71,
-          "watts": 49,
-          "hash": "03"
-        }
-      ]
+      "performance": []
     },
     {
       "id": "4",
-      "name": "Diogo Moura",
-      "bikePos": "4",
-      "date": "2019-09-12T22:07:31.460Z",
-      "hash": "04",
+      "date": "2019-10-17T23:21:04.495Z",
       "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
-      "performance": [
-        {
-          "id": "FBNBiIc_",
-          "date": "2019-09-12T22:07:40.286Z",
-          "march": 20,
-          "rpm": 23,
-          "kcal": 173,
-          "watts": 156,
-          "hash": "04"
-        },
-        {
-          "id": "ISBRTImk",
-          "date": "2019-09-12T22:07:45.182Z",
-          "march": 17,
-          "rpm": 18,
-          "kcal": 175,
-          "watts": 122,
-          "hash": "04"
-        },
-        {
-          "id": "nc5cy-MP",
-          "date": "2019-09-12T22:07:50.461Z",
-          "march": 20,
-          "rpm": 13,
-          "kcal": 93,
-          "watts": 178,
-          "hash": "04"
-        },
-        {
-          "id": "r6IUCgHj",
-          "date": "2019-09-12T22:07:55.263Z",
-          "march": 11,
-          "rpm": 22,
-          "kcal": 198,
-          "watts": 107,
-          "hash": "04"
-        }
-      ]
+      "performance": []
     },
     {
       "id": "5",
-      "name": "Teste5",
-      "bikePos": "5",
-      "date": "2019-09-12T22:07:31.459Z",
-      "hash": "05",
+      "date": "2019-10-17T23:21:04.527Z",
       "time": "00:00",
-      "pictureUrl": "https://www.gocycle.com.br/plataforma/public/uploads/users/default.png",
+      "performance": []
+    },
+    {
+      "id": "6",
+      "date": "2019-10-17T23:21:04.665Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "7",
+      "date": "2019-10-17T23:21:04.635Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "8",
+      "date": "2019-10-17T23:21:04.559Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "9",
+      "date": "2019-10-17T23:20:37.277Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "10",
+      "date": "2019-10-17T23:21:03.896Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "11",
+      "date": "2019-10-17T23:21:04.246Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "12",
+      "date": "2019-10-17T23:21:04.055Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "13",
+      "date": "2019-10-17T23:21:03.948Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "14",
+      "date": "2019-10-17T23:21:04.227Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "15",
+      "date": "2019-10-17T23:21:03.909Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "16",
+      "date": "2019-10-17T23:21:04.104Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "17",
+      "date": "2019-10-17T23:21:04.205Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "18",
+      "date": "2019-10-17T23:21:04.431Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "19",
+      "date": "2019-10-17T23:21:04.087Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "20",
+      "date": "2019-10-17T23:21:04.104Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "21",
+      "date": "2019-10-17T23:21:04.104Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "22",
+      "date": "2019-10-17T23:21:04.518Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "23",
+      "date": "2019-10-17T23:21:04.332Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "24",
+      "date": "2019-10-17T23:21:04.145Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "25",
+      "date": "2019-10-17T23:21:04.360Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "26",
+      "date": "2019-10-17T23:21:04.255Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "27",
+      "date": "2019-10-17T23:21:04.205Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "28",
+      "date": "2019-10-17T23:21:04.350Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "29",
+      "date": "2019-10-17T23:21:04.482Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "30",
+      "date": "2019-10-17T23:21:04.396Z",
+      "time": "00:00",
+      "performance": []
+    },
+    {
+      "id": "31",
+      "date": "2019-10-17T23:21:04.678Z",
+      "time": "00:00",
       "performance": []
     }
   ],

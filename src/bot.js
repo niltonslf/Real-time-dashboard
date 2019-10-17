@@ -27,4 +27,4 @@ setInterval(function() {
     )
     console.log(`🚴\t Request realizado`)
   }
-}, 5000)
+}, 1000)
