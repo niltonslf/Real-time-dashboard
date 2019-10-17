@@ -1,0 +1,10 @@
+{
+    "atlascode.jira.workingSite": {
+        "baseUrlSuffix": "atlassian.net"
+    },
+    "atlascode.jira.workingProject": {
+        "id": "10002",
+        "name": "Go Cycle",
+        "key": "GC"
+    }
+}

@@ -22,10 +22,11 @@ class Firestore {
 
   listenChanges() {
     const franchiseID = 1
+    const classID = 1
 
     this.__listenClasses(franchiseID)
-    this.__fetchTeacher(franchiseID, 1)
-    this.__listenUsers(franchiseID, 1)
+    this.__fetchTeacher(franchiseID, classID)
+    this.__listenUsers(franchiseID, classID)
   }
   /**
    * Listen changes classes collection
@@ -59,7 +60,7 @@ class Firestore {
           user.id = doc.id
           this.lowDB.set(`users[${user.id}]`, user).write()
           // emitir para os sockets que há um novo usuário
-          this.io.emit('user', user)
+          this.io.emit('userCheckin', user)
         })
       })
     })

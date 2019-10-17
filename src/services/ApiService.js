@@ -19,7 +19,7 @@ class ApiService {
     return {
       id: userID,
       name: user.name,
-      bike: user.bike_position,
+      bikePos: user.bike_position,
       class: classID,
       date: new Date(),
       hash: user.bike_hash,
@@ -27,6 +27,16 @@ class ApiService {
       pictureUrl: user.picture_url,
       performance: []
     }
+  }
+  postUserResult(data) {
+    const myInit = { method: 'POST', body: data }
+    fetch(`${this.apiUrl}/userscreen/classes/finished`, myInit)
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.error('Error:', err.message)
+      })
   }
 }
 
