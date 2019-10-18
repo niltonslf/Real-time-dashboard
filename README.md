@@ -1,6 +1,6 @@
 # About
 
-Projeto desenvolvido para uma academia de bicicletas que exibe informações em tempo real em telão. Essas bicicletas possuem um hardware conectado que envia informações sobre RPM, marcha e calorias gastas pelos ciclistas.
+Projeto desenvolvido para uma academia de bicicletas que exibe informações em tempo real em um telão. Essas bicicletas possuem um hardware conectado que envia informações sobre RPM, marcha e calorias gastas pelos ciclistas.
 
 Para fazer a simulação das bikes enviando estes dados para o back-end, desenvolvi um mini bot que simula estas requisições. O mesmopode ser encontrado dentro de `src/bot.js`.
 
